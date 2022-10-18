@@ -1,0 +1,53 @@
+package snippet;
+
+class Counter
+{
+private int counter;
+public Counter()
+{
+counter=0;
+}
+public void click()
+{
+counter=counter+1;
+}
+
+public int getCount()
+{
+return counter;
+}
+public void reset()
+{
+counter=0;
+}
+}
+public class CounterTest {
+
+public static void main(String[] args) {
+// TODO Auto-generated method stub
+Counter c1=new Counter();
+Counter c2=new Counter();
+System.out.println("For counter_1");
+System.out.println("Increment counter_1 thrice");
+c1.click();
+c1.click();
+c1.click();
+System.out.println("Counter_1 count "+c1.getCount());
+System.out.println("For counter_2");
+System.out.println("Increment counter_2 thrice");
+c2.click();
+c2.click();
+c2.click();
+System.out.println("Counter_2 count "+c2.getCount());
+
+System.out.println("Reset counter 1");
+c1.reset();
+System.out.println("Counter_1 count "+c1.getCount());
+
+System.out.println("Reset counter_2");
+c2.reset();
+System.out.println("Counter_2 count "+c2.getCount());
+
+}
+
+}
